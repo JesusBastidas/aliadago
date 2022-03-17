@@ -11,7 +11,7 @@
         placeholder="Introduce tu correo">
         <small id="helpId" class="form-text text-muted"></small>
     </div>
-    <button type="button" class="btn btn-primary rounded-pill">Log in</button>
+    <button type="button" class="rounded-pill">Log in</button>
   </div>
 </template>
 
@@ -31,8 +31,9 @@ label {
 }
 button {
   width: 10em;
-}
-.container {
-  padding: 20px;
+  background-color: #3a18e5;
+  border-color:#3a18e5;
+  color:aliceblue;
+  margin: 10px;
 }
 </style>
