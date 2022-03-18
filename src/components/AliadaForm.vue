@@ -12,7 +12,19 @@
         placeholder="Introduce tu correo">
         <small id="helpId" class="form-text text-muted"></small>
     </div>
-    <button type="button" id="btn1" class="rounded-pill" @click="verCorreo">Verificar</button>
+    <div v-if="estado" class="container">
+        <label for="user">Contraseña</label>
+        <input 
+        type="text"
+        ref="idpass"
+        class="form-control form-control-lg rounded-pill border border-primary" 
+        name="contraseña" 
+        id="contraseña" 
+        aria-describedby="helpId" 
+        placeholder="Introduce tu contraseña">
+        <small id="helpId" class="form-text text-muted"></small>
+    </div>
+    <button v-if="!estado" type="button" id="btn1" class="rounded-pill" @click="verCorreo">Verificar</button>
     <button v-if="estado" type="button" id="btn2" class="rounded-pill ">Log in</button>
   </div>
 </template>
